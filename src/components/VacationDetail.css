@@ -1,0 +1,250 @@
+.vacation-detail {
+  background: white;
+  min-height: calc(100vh - 80px);
+}
+
+.detail-hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.detail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+  color: white;
+  padding: 40px 0;
+}
+
+.detail-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.detail-location {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.detail-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  padding: 40px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.detail-main {
+  padding: 0 20px;
+}
+
+.detail-description {
+  margin-bottom: 30px;
+}
+
+.detail-description h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #ff6b35;
+  padding-bottom: 10px;
+}
+
+.detail-description p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.detail-highlights h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  color: #ff6b35;
+}
+
+.detail-highlights ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detail-highlights li {
+  background: #f8f9fa;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #ff6b35;
+  font-size: 1rem;
+  color: #555;
+}
+
+.detail-highlights li:before {
+  content: "✓ ";
+  color: #ff6b35;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.detail-sidebar {
+  padding: 0 20px;
+}
+
+.booking-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid #f1f3f4;
+  position: sticky;
+  top: 100px;
+}
+
+.price-info {
+  text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f1f3f4;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff6b35;
+  display: block;
+}
+
+.price-label {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+.trip-info {
+  margin-bottom: 25px;
+}
+
+.trip-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f1f3f4;
+  font-size: 0.95rem;
+}
+
+.trip-detail:last-child {
+  border-bottom: none;
+}
+
+.trip-detail strong {
+  color: #333;
+}
+
+.book-button {
+  display: block;
+  width: 100%;
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.book-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+  text-decoration: none;
+  color: white;
+}
+
+.navigation {
+  padding: 20px;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+}
+
+.back-link {
+  color: #666;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #ff6b35;
+}
+
+.not-found {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.not-found h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.back-button {
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .detail-hero {
+    height: 250px;
+  }
+  
+  .detail-title {
+    font-size: 2rem;
+  }
+  
+  .detail-location {
+    font-size: 1rem;
+  }
+  
+  .detail-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px 0;
+  }
+  
+  .booking-card {
+    position: static;
+    margin-bottom: 30px;
+  }
+  
+  .price {
+    font-size: 2rem;
+  }
+} 

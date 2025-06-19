@@ -1,0 +1,270 @@
+.confirmation-container {
+  background: white;
+  min-height: calc(100vh - 80px);
+  padding: 40px 0;
+}
+
+.confirmation-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.success-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.confirmation-content h1 {
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.success-message {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.booking-details {
+  background: #f8f9fa;
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.booking-details h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 2px solid #ff6b35;
+  padding-bottom: 15px;
+}
+
+.detail-section {
+  margin-bottom: 30px;
+}
+
+.detail-section h3 {
+  font-size: 1.3rem;
+  color: #ff6b35;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.booking-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #ff6b35;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.vacation-summary {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e1e5e9;
+}
+
+.vacation-summary img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.vacation-summary h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.vacation-summary p {
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e1e5e9;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f3f4;
+  font-size: 0.95rem;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-item .label {
+  font-weight: 600;
+  color: #333;
+}
+
+.detail-item .total-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ff6b35;
+}
+
+.special-requests {
+  grid-column: 1 / -1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.next-steps {
+  background: #e8f5e8;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  border-left: 4px solid #28a745;
+}
+
+.next-steps h3 {
+  color: #28a745;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.next-steps ul {
+  list-style: none;
+  padding: 0;
+}
+
+.next-steps li {
+  margin-bottom: 12px;
+  padding-left: 25px;
+  position: relative;
+  color: #555;
+  line-height: 1.5;
+}
+
+.next-steps li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.confirmation-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.home-button,
+.print-button {
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.home-button {
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  color: white;
+}
+
+.home-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+  text-decoration: none;
+  color: white;
+}
+
+.print-button {
+  background: white;
+  color: #333;
+  border: 2px solid #ddd;
+}
+
+.print-button:hover {
+  background: #f8f9fa;
+  border-color: #bbb;
+}
+
+.no-booking {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.no-booking h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.no-booking p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .confirmation-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .success-message {
+    font-size: 1.1rem;
+  }
+  
+  .booking-details {
+    padding: 25px;
+  }
+  
+  .vacation-summary {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .confirmation-actions {
+    flex-direction: column;
+  }
+  
+  .home-button,
+  .print-button {
+    width: 100%;
+  }
+}
